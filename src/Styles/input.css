@@ -1,0 +1,30 @@
+input {
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #DEE3EB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.05px;
+    width: 100%;
+    margin-bottom: 24px;
+    margin-top: 8px;
+    outline: none;
+}
+
+label {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: #6D7A98;
+}
+
+small {
+    color: red;
+    margin-top: -12px;
+}
+input:focus {
+    border: 1px solid #1F6AEC;
+}

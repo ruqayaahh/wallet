@@ -1,0 +1,189 @@
+body {
+    font-family: Inter;
+    font-weight: normal;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+div.container {
+    display: flex;
+    margin: -8px;
+    width: 100vw;
+}
+
+aside {
+    height: 100vh;
+    width: 248px;
+}
+
+div.sidebar {
+    background-color: #0B2253;
+    height: 100vh;
+    width: 248px;
+    padding: 0px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.logo-div {
+    margin: 32px 0px;
+    padding-left: 36px;
+}
+
+.menu {
+    padding: 0px 16px 16px 16px;
+}
+.menu-flex {
+    display: flex;
+    align-items: center;
+}
+.menu-flex-item {
+    padding: 12px 16px;
+}
+p.sidebar-menu {
+    font-size: 14px;
+    line-height: 16px;
+    color: #B3BECF;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 64px 88px 96px auto;
+    margin: 0 32px;
+    width: 100%;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.margin-r-44 {
+    margin-right: 44px;
+}
+
+.round-bg {
+    width: 32px;
+    height: 32px;
+    background-color: #D7DCE0;
+    border: 2px solid #F4F5F6;
+    box-sizing: border-box;
+    border-radius: 18px;
+    margin: 0 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.welcome-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-bottom {
+    align-self: baseline;
+    /* justify-self: baseline; */ 
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    width: 167px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #1F6AEC;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #1F6AEC;
+    text-align: center;
+}
+
+.btn {
+    width: 163px;
+    background: #1F6AEC;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.funds {
+    width: 552px;
+    height: 96px;
+    background: #FFFFFF;
+    border: 1px solid #DEE3EB;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    flex-flow: column nowrap; 
+    padding: 24px;
+}
+
+.m-bottom {
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.25px;
+    color: #0B2253;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0B2253;
+}
+
+.funds > h2, .funds > p {
+    margin: 0px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: #0B2253;
+    margin-bottom: 8px;
+} 
+
+.funds > p {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: #6D7A98;
+}
+
+div.empty-state {
+    height: 96px;
+    width: 85px;
+    align-self: center;
+    justify-self: center;
+    margin-top: 104px;
+}
+div.empty-state > img {
+    width: 100%;
+    height: 100%;
+}
+
+.transaction-history {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.transaction-history > .h3 {
+    margin-top: 24px;
+}
+.transaction-history > p {
+    align-self: center;
+}
+
+label {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: #6D7A98;
+}
