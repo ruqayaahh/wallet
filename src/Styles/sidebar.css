@@ -1,0 +1,82 @@
+aside {
+    height: 100vh;
+    width: 248px;
+}
+div.sidebar {
+    background-color: #0B2253;
+    height: 100vh;
+    width: 248px;
+    padding: 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    /* position: fixed; */
+}
+.logo-div {
+    margin: 32px 0px;
+    padding-left: 36px;
+}
+.logo-text {
+    color: #FFFFFF;
+}
+.menu {
+    margin: 0px 16px 16px 16px;
+}
+.menu-flex {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.menu-flex:hover {
+    background: rgba(139, 149, 171, 0.24);
+    border-radius: 4px;
+}
+.menu-flex:hover .sidebar-menu {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+.menu-flex-item {
+    padding: 12px 12px 12px 16px;
+    background-size: cover;
+}
+.item-one {
+    background-image: url('../assets/Dashboard.svg');
+}
+.item-two {
+    background-image: url('../assets/Clipboard list.svg');
+}
+.item-three {
+    background-image: url('../assets/Add user.svg');
+}
+
+/* .item-one:focus,
+.item-one:hover {
+
+}
+.item-one:focus,
+.item-one:hover {
+
+}
+.item-one:focus,
+.item-one:hover {
+
+} */
+p.sidebar-menu {
+    font-size: 14px;
+    line-height: 16px;
+    color: #B3BECF;
+}
+a {
+    width: 86px;
+    height: 25px;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+a > img {
+    margin-right: 6.3px;
+}

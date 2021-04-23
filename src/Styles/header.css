@@ -1,0 +1,36 @@
+.header-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.margin-r-44 {
+    margin-right: 44px;
+}
+p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3A434B;
+}
+.round-bg {
+    width: 32px;
+    height: 32px;
+    background-color: #D7DCE0;
+    border: 2px solid #F4F5F6;
+    box-sizing: border-box;
+    border-radius: 18px;
+    margin: 0 2px 0 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.round-bg>p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    /* text-align: center; */
+    color: #3A434B;
+}

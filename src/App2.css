@@ -1,0 +1,11 @@
+div.container {
+    display: flex;
+    width: 100vw;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 64px 88px 96px auto;
+    margin: 0 32px;
+    width: 100%;
+}
