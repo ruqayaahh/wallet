@@ -1,0 +1,27 @@
+.transaction-history {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.transaction-history > .h3 {
+    margin-top: 24px;
+}
+h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0B2253;
+}
+div.empty-state {
+    height: 96px;
+    width: 85px;
+    align-self: center;
+    justify-self: center;
+    margin-top: 88px;
+}
+div.empty-state > img {
+    width: 100%;
+    height: 100%;
+}
+.transaction-history > p {
+    align-self: center;
+}
