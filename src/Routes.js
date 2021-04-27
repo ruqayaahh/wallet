@@ -11,7 +11,7 @@ import Inbox from './Views/Authscreens/inboxreset';
 const Approutes = () => {
    return (
         <Switch>
-            <Route exact path="/signup" component={Signup} />
+            <Route exact path="/" component={Signup} />
             <Route exact path="/otp" component={Otp} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/forgot-password" component={ForgotPassword} />
