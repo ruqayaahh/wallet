@@ -4,6 +4,7 @@ import dashboardIcon from '../../src/assets/Dashboard.svg';
 import clipboard from '../../src/assets/Clipboard list.svg';
 import user from '../../src/assets/Add user.svg';
 import '../Styles/sidebar.css';
+import { Link } from 'react-router-dom';
 
 class Sidebar extends React.Component {
     state = {
@@ -29,7 +30,7 @@ class Sidebar extends React.Component {
                         <img src={dashboardIcon} alt="" className="item-one"></img>
                         </div>
                         <div>
-                            <p className="sidebar-menu">Home</p>
+                            <Link to="/dashboard" className="sidebar-menu">Home</Link>
                         </div>
                     </div>
                     <div className="menu-flex">
@@ -38,7 +39,7 @@ class Sidebar extends React.Component {
                         <img src={clipboard} alt="" className="item-two"></img>
                         </div>
                         <div>
-                            <p className="sidebar-menu">History</p>
+                            <Link to="/transactions" className="sidebar-menu">History</Link>
                         </div>
                     </div>
                     <div className="menu-flex">
@@ -47,7 +48,7 @@ class Sidebar extends React.Component {
                         {/* <span className="item-three"></span> */}
                         </div>
                         <div>
-                            <p className="sidebar-menu">Profile</p>
+                            <Link to="/dashboard" className="sidebar-menu">Profile</Link>
                         </div>
                     </div>
                 </div>

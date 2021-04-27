@@ -3,9 +3,9 @@ import Sidebar from '../../Components/Sidebar';
 import Header from '../../Components/Header';
 import HeaderTwo from '../../Components/HeaderTwo';
 import Balance from '../../Components/Balance';
-import Transactions from '../../Components/Transactions';
+import Initial from '../../Components/Initial';
 
-const Transfers = () => {
+const Dashboard = () => {
     return (
         <div className="container">
             <Sidebar />
@@ -13,11 +13,11 @@ const Transfers = () => {
                 <Header />
                 <HeaderTwo />
                 <Balance />
-                <Transactions message="Recent Transactions"/>
+                <Initial message="Transaction History"/>
             </div>
         </div>
         
     );
 }
 
-export default Transfers;
+export default Dashboard;

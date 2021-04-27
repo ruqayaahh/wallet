@@ -1,4 +1,4 @@
-import '../Styles/input.css'
+import './input.css'
 const Input = ({label, type, placeholder, name, onChange, value, className, styles}) => {
    return (
        <div>

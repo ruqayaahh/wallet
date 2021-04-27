@@ -1,8 +1,8 @@
-import '../Styles/signup.css';
+// import '../Styles/signup.css';
 import '../Styles/otp.css';
-import Input from './Input'
+import Input from '../../Input/Input'
 
-const OTPPage = () => {
+const OtpForm = () => {
     return (
         <div className="form-container">
     <form>
@@ -30,7 +30,7 @@ const OTPPage = () => {
         <div>
             <span>
             {/* eslint-disable-next-line */}
-                Didn't get the code? <a href="#">Resend</a>
+                Didn't get the code? <a onClick={() => alert('OTP has been resent')} href="#">Resend</a>
             </span>
         </div>
         <div>
@@ -41,4 +41,4 @@ const OTPPage = () => {
     );
 };
 
-export default OTPPage;
+export default OtpForm;

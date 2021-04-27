@@ -1,6 +1,6 @@
 import '../Styles/inbox.css';
 
-const ResetPasswordInboxPage = () => {
+const InboxReset = () => {
     return (
         <div className="form-container">
         <div className="sub-container">
@@ -38,4 +38,4 @@ const ResetPasswordInboxPage = () => {
     );
 };
 
-export default ResetPasswordInboxPage;
+export default InboxReset;

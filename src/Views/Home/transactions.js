@@ -5,7 +5,7 @@ import HeaderTwo from '../../Components/HeaderTwo';
 import Balance from '../../Components/Balance';
 import Transactions from '../../Components/Transactions';
 
-const Transfers = () => {
+const Transaction = () => {
     return (
         <div className="container">
             <Sidebar />
@@ -20,4 +20,4 @@ const Transfers = () => {
     );
 }
 
-export default Transfers;
+export default Transaction;

@@ -1,14 +1,14 @@
 import '../Styles/dashboard.css';
 import Box from '../assets/Empty state image.svg';
 
-function Dashboard({message}) {
+function Initial({message}) {
     return (
-        <div class="transaction-history">
-        <div class="h3">
+        <div className="transaction-history">
+        <div className="h3">
             <h3>{message}</h3>
         </div>
-        <div class="transaction-history">
-            <div class="empty-state">
+        <div className="transaction-history">
+            <div className="empty-state">
                 <img src={Box} alt=""></img>
             </div>
             <p>No Transactions</p>
@@ -17,4 +17,4 @@ function Dashboard({message}) {
     );
 };
 
-export default Dashboard;
+export default Initial;

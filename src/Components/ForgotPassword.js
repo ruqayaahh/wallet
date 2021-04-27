@@ -1,8 +1,13 @@
 import '../Styles/signup.css';
 import '../Styles/forgot-password.css';
-import Input from './Input'
+import Input from '../Input/Input'
+import { Link, useHistory } from 'react-router-dom';
 
-const ForgotPasswordPage = () => {
+const ForgotPasswordForm = () => {
+    const history = useHistory();
+    function handleClick() {
+        history.push("/reset-inbox");
+    }
     return(
         <div className="form-container">
                 <form>
@@ -10,12 +15,12 @@ const ForgotPasswordPage = () => {
                         <Input label="Email Address" placeholder="Kingsleyomin@letshego.com" type="email" />
                     </div>
                     <div className="width">
-                        <button type="submit">Recover Password</button>
+                        <button onClick={handleClick} type="submit">Recover Password</button>
                     </div>
                     <div>
                         <span>
             {/* eslint-disable-next-line */}
-                            <a href="#">Return to Log In</a>
+                            <Link to="/login">Return to Log In</Link>
                         </span>
                     </div>
                 </form>
@@ -23,4 +28,4 @@ const ForgotPasswordPage = () => {
     );
 };
 
-export default ForgotPasswordPage;
+export default ForgotPasswordForm;

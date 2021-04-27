@@ -89,7 +89,7 @@ p.sidebar-menu {
 }
 
 button {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -101,7 +101,7 @@ button {
     box-sizing: border-box;
     border-radius: 8px;
     color: #1F6AEC;
-    text-align: center;
+    text-align: center; */
 }
 
 .btn {

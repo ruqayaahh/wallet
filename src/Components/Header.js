@@ -18,15 +18,15 @@ const Header = () => {
     // const defaultOption = options[0];
     // value={defaultOption}
     return (
-        <div class="header-flex">
-                    <div class="margin-r-44">
+        <div className="header-flex">
+                    <div className="margin-r-44">
                         <img src={notif} alt=""></img>
                     </div>
                     <div>
                         <p>Kingsley Omin</p>
                     </div>
-                    <div class="round-bg">
-                        <p class="">KO</p>
+                    <div className="round-bg">
+                        <p className="">KO</p>
                     </div>
                     <div>
                         <Dropdown options={options}/>
