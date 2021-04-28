@@ -1,5 +1,5 @@
 import '../Styles/login.css';
-import Input from '../Input/Input';
+import Input from '../../Input/Input';
 import { Link } from 'react-router-dom';
 
 const LoginForm = () => {
@@ -25,7 +25,7 @@ const LoginForm = () => {
                     <div>
                         <span>
             {/* eslint-disable-next-line */}
-                            Don't have an account? <Link to="/signup" href="#">Register Now</Link>
+                            Don't have an account? <Link to="/">Register Now</Link>
                         </span>
                     </div>
                 </form>

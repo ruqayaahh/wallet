@@ -27,7 +27,7 @@ const LoginForm = () => {
                     </div>
                     <div className="width">
                             <p className="small-signup mb-0">
-                            Don't have an account? <span className="span-signup"><Link to="/signup" href="#">Register Now</Link></span>
+                            Don't have an account? <span className="span-signup"><Link to="/">Register Now</Link></span>
                             </p>
                         </div>  
                 </FormContainer>
