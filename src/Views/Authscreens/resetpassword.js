@@ -1,10 +1,12 @@
-import '../../Styles/base.css';
-import ResetPasswordForm from '../../Components/ResetPasswordForm';
+import ResetPasswordForm from '../../ResetPassword/ResetPasswordForm';
 import DashboardLayout from '../Layout';
 
 function ResetPassword() {
+    const style = {
+        maxWidth: '415px',
+    }
     return (
-        <DashboardLayout message="Reset Password" submessage="Create a unique password to keep your account protected">
+        <DashboardLayout style={style}  message="Reset Password" submessage="Create a unique password to keep your account protected">
            <ResetPasswordForm />
         </DashboardLayout>
     );
