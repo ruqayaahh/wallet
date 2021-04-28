@@ -1,27 +1,27 @@
 [[redirects]]
-from = "/";
-to  = "/";
+from = "/"
+to  = "/"
 
 [[redirects]]
-from = "/otp";
-to  = "/otp";
+from = "/otp"
+to  = "/otp"
 
 [[redirects]]
-from = "/login";
-to  = "/login";
+from = "/login"
+to  = "/login"
 
 [[redirects]]
-from = "/forgot-password";
-to  = "/forgot-password";
+from = "/forgot-password"
+to  = "/forgot-password"
 
 [[redirects]]
-from = "/reset-inbox";
-to  = "/reset-inbox";
+from = "/reset-inbox"
+to  = "/reset-inbox"
 
 [[redirects]]
-from = "/reset-password";
-to  = "/reset-password";
+from = "/reset-password"
+to  = "/reset-password"
 
 [[redirects]]
-from = "/dashboard";
-to  = "/dashboard";
+from = "/dashboard"
+to  = "/dashboard"
