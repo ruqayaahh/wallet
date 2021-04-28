@@ -1,0 +1,27 @@
+[[redirects]]
+from: "/";
+to : "/";
+
+[[redirects]]
+from: "/otp";
+to : "/otp";
+
+[[redirects]]
+from: "/login";
+to : "/login";
+
+[[redirects]]
+from: "/forgot-password";
+to : "/forgot-password";
+
+[[redirects]]
+from: "/reset-inbox";
+to : "/reset-inbox";
+
+[[redirects]]
+from: "/reset-password";
+to : "/reset-password";
+
+[[redirects]]
+from: "/dashboard";
+to : "/dashboard";
