@@ -1,6 +1,6 @@
 import '../Styles/signup.css';
 import '../Styles/reset-password.css';
-import Input from '../Input/Input'
+import Input from '../../Input/Input'
 
 const ResetPasswordForm = () => {
     return (

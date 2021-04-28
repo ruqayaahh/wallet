@@ -1,5 +1,5 @@
 import '../../Styles/base.css';
-import InboxReset from '../../Components/InboxResetForm';
+import InboxReset from '../../InboxReset/InboxReset';
 import DashboardLayout from '../Layout';
 
 function Inbox() {
