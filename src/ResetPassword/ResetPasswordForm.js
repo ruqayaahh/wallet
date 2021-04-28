@@ -1,7 +1,7 @@
 import Button from '../Button/Button';
 import FormContainer from '../FormContainer/FormContainer';
 import Input from '../Input/Input';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const ResetPasswordForm = () => {
     const style = {
