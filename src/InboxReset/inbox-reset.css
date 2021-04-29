@@ -15,10 +15,11 @@ h3.inbox-message {
     text-align: center;
     letter-spacing: -0.761905px;
     color: #0B2253;
+    margin: 0px;
     margin-bottom: 16px;
 }
 span.inbox-message {
-    font-size: 18px;
+    /* font-size: 18px; */
     line-height: 24px;
     text-align: center;
     letter-spacing: -0.05px;

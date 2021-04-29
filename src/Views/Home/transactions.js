@@ -1,23 +1,15 @@
-import '../../App2.css';
-import Sidebar from '../../Components/Sidebar';
-import Header from '../../Components/Header';
-import HeaderTwo from '../../Components/HeaderTwo';
-import Balance from '../../Components/Balance';
-import Transactions from '../../Components/Transactions';
+import DashboardLayout from '../UserLayout/UserDashboardLayout';
+import Initial from '../../Initial/Initial';
+import Transactions from '../../Transactions/Transactions';
 
-const Transaction = () => {
+function RecentTransactions() {
     return (
-        <div className="container">
-            <Sidebar />
-            <div className="main">
-                <Header />
-                <HeaderTwo />
-                <Balance />
-                <Transactions message="Recent Transactions"/>
-            </div>
-        </div>
-        
+        <DashboardLayout>
+            <Initial message="Recent Transaction">
+                <Transactions />
+            </Initial>
+        </DashboardLayout>   
     );
 }
 
-export default Transaction;
+export default RecentTransactions;

@@ -1,4 +1,4 @@
-import '../Styles/balance.css';
+import './balance.css';
 
 const Balance = () => {
     return (

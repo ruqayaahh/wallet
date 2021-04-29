@@ -1,5 +1,5 @@
 import SignupForm from '../../SignupForm/SignupForm';
-import DashboardLayout from '../Layout';
+import AuthscreenLayout from '../Layout';
 
 function Signup() {
     const style = {
@@ -7,9 +7,9 @@ function Signup() {
         minHeight: '120px'
     }
     return (
-        <DashboardLayout style={style} message="Create Your Account" submessage="Let's get you started">
+        <AuthscreenLayout style={style} message="Create Your Account" submessage="Let's get you started">
             <SignupForm />
-        </DashboardLayout>
+        </AuthscreenLayout>
     );
 }
 

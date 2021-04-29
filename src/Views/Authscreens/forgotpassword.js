@@ -1,4 +1,4 @@
-import DashboardLayout from '../Layout';
+import AuthscreenLayout from '../Layout';
 import ForgotPasswordForm from '../../ForgotPassword/ForgotPassword';
 
 function ForgotPassword() {
@@ -6,9 +6,9 @@ function ForgotPassword() {
         maxWidth: '484px'
     }
     return (
-        <DashboardLayout style={style} message="Forgot Password" submessage="Kindly enter your registered email to reset your passsword">
+        <AuthscreenLayout style={style} message="Forgot Password" submessage="Kindly enter your registered email to reset your passsword">
             <ForgotPasswordForm />
-        </DashboardLayout>
+        </AuthscreenLayout>
     );
 }
 

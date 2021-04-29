@@ -7,12 +7,7 @@
 .margin-r-44 {
     margin-right: 44px;
 }
-/* p {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    color: #3A434B;
-} */
+
 .round-bg {
     width: 32px;
     height: 32px;
@@ -27,10 +22,9 @@
     padding: 0px;
 }
 
-.round-bg>p {
+.round-bg > p {
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
-    /* text-align: center; */
     color: #3A434B;
 }

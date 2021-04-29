@@ -1,8 +1,8 @@
-import '../Styles/header.css';
+import './header.css';
 import notif from '../assets/notification-2-line.svg';
 // import arrow from '../assets/Group 31000.svg';
 import Dropdown from 'react-dropdown';
-import "react-dropdown/style.css"
+import "react-dropdown/style.css";
 
 // import Dropdown from 'react-simple-dropdown';
 // import DropdownTrigger from 'Dropdown.DropdownTrigger';

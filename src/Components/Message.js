@@ -1,6 +1,6 @@
 import '../Styles/message.css';
 
-export default function Message(props) {
+function Message(props) {
     return (
         <div style={props.style}>
             <h2 className="auths">{props.message}</h2>
@@ -8,3 +8,5 @@ export default function Message(props) {
         </div>
     );
 };
+
+export default Message;

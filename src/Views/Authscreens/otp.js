@@ -1,11 +1,11 @@
 import OtpForm from '../../OtpForm/OtpForm';
-import DashboardLayout from '../Layout';
+import AuthscreenLayout from '../Layout';
 
 function Otp() {
         return (
-            <DashboardLayout message="OTP Verification" submessage="A code has been sent to your email">
+            <AuthscreenLayout message="OTP Verification" submessage="A code has been sent to your email">
                <OtpForm />
-            </DashboardLayout>
+            </AuthscreenLayout>
         );
 }
 

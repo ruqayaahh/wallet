@@ -2,7 +2,7 @@ import '../Styles/base.css';
 import Home from '../Components/Home';
 import Message from '../Components/Message';
 
-function DashboardLayout({style, message, submessage, children}) {
+function AuthscreenLayout({style, message, submessage, children}) {
     return (
         <div className="container-box">
             <div className="content">
@@ -16,4 +16,4 @@ function DashboardLayout({style, message, submessage, children}) {
     );
 }
 
-export default DashboardLayout;
+export default AuthscreenLayout;

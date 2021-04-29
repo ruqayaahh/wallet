@@ -1,13 +1,10 @@
-import '../Styles/transactions.css';
+import './transaction.css';
 import Success from '../assets/Group 31119.svg';
 import Fail from '../assets/Group 31018.svg'
 
 const Transactions = ({message}) => {
     return (
         <div className="transaction-history">
-            <div>
-                <h3>{message}</h3>
-            </div>
             <div>
                 <table>
                     <thead>

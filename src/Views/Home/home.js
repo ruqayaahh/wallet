@@ -1,23 +1,20 @@
-import '../../App2.css';
-import Sidebar from '../../Components/Sidebar';
-import Header from '../../Components/Header';
-import HeaderTwo from '../../Components/HeaderTwo';
-import Balance from '../../Components/Balance';
-import Initial from '../../Components/Initial';
+import DashboardLayout from '../UserLayout/UserDashboardLayout';
+import Initial from '../../Initial/Initial';
+import Box from '../../assets/Empty state image.svg';
 
-const Dashboard = () => {
+function Landing() {
     return (
-        <div className="container">
-            <Sidebar />
-            <div className="main">
-                <Header />
-                <HeaderTwo />
-                <Balance />
-                <Initial message="Transaction History"/>
-            </div>
-        </div>
-        
+        <DashboardLayout>
+            <Initial message="Transaction History">
+                <div className="transaction-history">
+                    <div className="empty-state">
+                        <img src={Box} alt=""></img>
+                    </div>
+                    <p>No Transactions</p>
+                </div>
+            </Initial>
+        </DashboardLayout>   
     );
 }
 
-export default Dashboard;
+export default Landing;
