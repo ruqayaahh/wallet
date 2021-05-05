@@ -1,0 +1,10 @@
+.radio-label {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: #0b2253;
+  margin-left: 8px;
+}
+input[type="radio"] {
+  margin: 0;
+}

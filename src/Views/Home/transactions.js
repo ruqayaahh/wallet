@@ -5,7 +5,7 @@ import Transactions from '../../Transactions/Transactions';
 function RecentTransactions() {
     return (
         <DashboardLayout>
-            <Initial message="Recent Transaction">
+            <Initial message="Recent Transactions">
                 <Transactions />
             </Initial>
         </DashboardLayout>   

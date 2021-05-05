@@ -1,14 +1,14 @@
 import './header-two.css';
 import Button from '../Button/Button';
 import { useState } from 'react';
-import Modal from '../Modal/Modal'
+import Modal from '../Modal/Modal';
+import Transfer from '../Transfer/Transfer';
+import FundWallet from '../Funding/Funding';
 
 const HeaderTwo = () => {
-    const [open,setOpen] = useState(false);
-    // const openTransferModal() =
-    const handleOpen = () => {
-        console.log("clicked");
-    }
+    const [openTransfer, setOpenTransfer] = useState(false);
+    const [openFunding, setOpenFunding] = useState(false);
+
     return(
         <div className="welcome-flex">
                     <div className="align-bottom">
@@ -19,13 +19,18 @@ const HeaderTwo = () => {
                     <div className="header-flex">
                         <div className="btn-transfer">
                             <Button type="button" title="Transfer Funds" className="btn-transfer-btn" 
-                            onClick={() => setOpen(true)}></Button>
+                            onClick={() => setOpenTransfer(true)}></Button>
                         </div>
                         <div className="btn-funds">
-                            <Button type="button" title="+ Fund Wallet" className="btn-funds-btn" ></Button>
+                            <Button type="button" title="+ Fund Wallet" className="btn-funds-btn" onClick={() => setOpenFunding(true)}></Button>
                         </div>
                     </div>
-                    {/* <Modal open={open} setOpen={setOpen} /> */}
+                    <Modal title="Transfer" showModal={openTransfer} setShowModal={setOpenTransfer}>
+                        <Transfer />
+                    </Modal>
+                    <Modal title="Fund Wallet" showModal={openFunding} setShowModal={setOpenFunding}>
+                        <FundWallet />
+                    </Modal>
                 </div>
     );
 };

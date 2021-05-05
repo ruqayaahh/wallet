@@ -7,7 +7,7 @@ import InboxReset from './Views/Authscreens/inboxreset';
 import ResetPassword from './Views/Authscreens/resetpassword';
 import Landing from './Views/Home/home';
 import RecentTransactions from './Views/Home/transactions';
-import Transfers from './Views/Home/transfer';
+// import Transfers from './Views/Home/transfer';
 
 const Approutes = () => {
    return (
@@ -20,7 +20,7 @@ const Approutes = () => {
             <Route exact path="/reset-password" component={ResetPassword} />
             <Route exact path="/dashboard" component={Landing} />
             <Route exact path="/transactions" component={RecentTransactions} />
-            <Route exact path="/transfers" component={Transfers} />
+            {/* <Route exact path="/transfers" component098y65trea ? ={Transfers} /> */}
         </Switch>
    );
 }

@@ -1,12 +1,12 @@
+import { forwardRef } from 'react';
 import './input.css'
-const Input = ({label, type, placeholder, name, onChange, value, className, styles}) => {
-   return (
+const Input = forwardRef(({label, type, placeholder, name, onChange, handleChange, onBlur, value, className, styles}, ref) => {
+    return (
        <div>
-           <label>{label}</label>
-           <input type={type} placeholder={placeholder} name={name} required onChange={onChange} value={value} className={className} style={styles}></input>
-           {/* { error && <div className={styles.inputError}></div>} */}
+           <label className="text-label">{label}</label>
+           <input type={type} placeholder={placeholder} name={name} ref={ref} onChange={onChange} onKeyUp={handleChange} onBlur={onBlur} value={value} className={className} style={styles}></input>
        </div>
    );
-};
+});
 
 export default Input;

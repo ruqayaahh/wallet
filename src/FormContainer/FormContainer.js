@@ -1,8 +1,8 @@
 import './form-container.css';
 
-const FormContainer = ({children, style}) => {
+const FormContainer = ({children, style, ...rest}) => {
     return (
-        <form className="form-container" style={style}>
+        <form className="form-container" style={style} {...rest}>
            {children}
         </form>
     );
