@@ -1,21 +1,21 @@
 import './otp-form.css';
 import Input from '../Input/Input';
 import FormContainer from '../FormContainer/FormContainer';
-import { useForm } from 'react-hook-form';
+// import { useForm } from 'react-hook-form';
 
 const OtpForm = () => {
     const style = {
         height: '290px'
     };
-    const { register, formState: { errors }, handleSubmit } = useForm({
-        criteriaMode: 'all',
-        mode: 'all'
-    })
-    const verifyOTP = () => {
+    // const { register, formState: { errors }, handleSubmit } = useForm({
+    //     criteriaMode: 'all',
+    //     mode: 'all'
+    // })
+    // const verifyOTP = () => {
 
-    };
+    // };
     return (
-        <FormContainer onChange={verifyOTP} style={style}>
+        <FormContainer style={style}>
             <div>
                 <h3 className="otp-title">
                     Kindly enter your OTP to <br></br>
