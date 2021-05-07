@@ -1,3 +1,4 @@
+import React from 'react';
 import Mailbox from '../../assets/Group.svg';
 import FormContainer from '../FormContainer/FormContainer';
 import './inbox-reset.css';

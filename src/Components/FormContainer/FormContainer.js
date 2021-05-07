@@ -1,3 +1,4 @@
+import React from 'react';
 import './form-container.css';
 
 const FormContainer = ({children, style, ...rest}) => {

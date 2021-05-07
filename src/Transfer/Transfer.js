@@ -1,3 +1,4 @@
+import React from 'react';
 import './transfer.css';
 import Input from '../../Input/Input';
 import InputRadio from '../../InputRadio/InputRadio';

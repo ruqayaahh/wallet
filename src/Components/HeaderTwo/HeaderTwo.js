@@ -1,3 +1,4 @@
+import React from 'react';
 import './header-two.css';
 import Button from '../Button/Button';
 import { useState } from 'react';
@@ -12,8 +13,8 @@ const HeaderTwo = () => {
     return(
         <div className="welcome-flex">
                     <div className="align-bottom">
-                        <h2>
-                            Hello Kingsley 👋🏿
+                        <h2 id="forEmoji">
+                            Hello Kingsley <span role="img" aria-labelledby="forEmoji">👋🏿</span>
                         </h2>
                     </div>
                     <div className="header-flex">

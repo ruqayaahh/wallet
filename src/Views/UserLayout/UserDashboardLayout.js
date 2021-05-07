@@ -1,3 +1,4 @@
+import React from 'react';
 import '../../Styles/base.css';
 import Sidebar from '../../Components/Sidebar/Sidebar';
 import Header from '../../Components/Header/Header';

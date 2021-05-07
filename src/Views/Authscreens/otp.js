@@ -1,3 +1,4 @@
+import React from 'react';
 import OtpForm from '../../Components/OtpForm/OtpForm';
 import AuthscreenLayout from '../Layout';
 

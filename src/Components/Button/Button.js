@@ -1,3 +1,4 @@
+import React from 'react';
 import './button.css';
 
 const Button = ({title, type, className, ...rest}) => {

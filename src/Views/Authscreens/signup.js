@@ -1,3 +1,4 @@
+import React from 'react';
 import SignupForm from '../../Components/SignupForm/SignupForm';
 import AuthscreenLayout from '../Layout';
 

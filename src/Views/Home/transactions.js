@@ -1,3 +1,4 @@
+import React from 'react';
 import DashboardLayout from '../UserLayout/UserDashboardLayout';
 import Initial from '../../Components/Initial/Initial';
 import Transactions from '../../Components/Transactions/Transactions';

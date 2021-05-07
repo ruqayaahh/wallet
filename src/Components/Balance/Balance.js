@@ -1,3 +1,4 @@
+import React from 'react';
 import './balance.css';
 
 const Balance = () => {

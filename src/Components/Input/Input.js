@@ -1,3 +1,4 @@
+import React from 'react';
 import { forwardRef } from 'react';
 import './input.css'
 const Input = forwardRef(({label, type, placeholder, name, onChange, handleChange, onBlur, value, className, styles}, ref) => {

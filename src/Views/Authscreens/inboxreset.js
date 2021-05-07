@@ -1,3 +1,4 @@
+import React from 'react';
 import '../../Styles/base.css';
 import InboxReset from '../../Components/InboxReset/InboxReset';
 import AuthscreenLayout from '../Layout';

@@ -1,3 +1,4 @@
+import React from 'react';
 import './header-two.css';
 import Button from '../Button/Button';
 import { useState } from 'react';

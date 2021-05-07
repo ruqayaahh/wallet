@@ -1,16 +1,18 @@
+import React from 'react';
 import './otp-form.css';
 import Input from '../Input/Input';
 import FormContainer from '../FormContainer/FormContainer';
-// import { useForm } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
+// import { ErrorMessage } from '@hookform/error-message';
 
 const OtpForm = () => {
     const style = {
         height: '290px'
     };
-    // const { register, formState: { errors }, handleSubmit } = useForm({
-    //     criteriaMode: 'all',
-    //     mode: 'all'
-    // })
+    const { register } = useForm({
+        criteriaMode: 'all',
+        mode: 'all'
+    })
     // const verifyOTP = () => {
 
     // };
@@ -23,10 +25,10 @@ const OtpForm = () => {
                 </h3> 
             </div>
             <div className="otp-input-container d-flex-otp">
-                <div className="inline-input-otp"><Input type="text" name="firstdigit" placeholder="0"/></div>
-                <div className="inline-input-otp"><Input type="text" name="seconddigit" placeholder="0"/></div>
-                <div className="inline-input-otp"><Input type="text" name="thirddigit" placeholder="0"/></div>
-                <div className="inline-input-otp"><Input type="text" name="fourthdigit" placeholder="0"/></div>
+                <div className="inline-input-otp"><Input {...register('firstdigit',)} type="text" name="firstdigit" placeholder="0"/></div>
+                <div className="inline-input-otp"><Input {...register('seconddigit',)} type="text" name="seconddigit" placeholder="0"/></div>
+                <div className="inline-input-otp"><Input {...register('thirddigit',)} type="text" name="thirddigit" placeholder="0"/></div>
+                <div className="inline-input-otp"><Input {...register('fourthdigit',)} type="text" name="fourthdigit" placeholder="0"/></div>
             </div>
             <div>
                 <p className="small-otp">

@@ -1,3 +1,4 @@
+import React from 'react';
 import ResetPasswordForm from '../../Components/ResetPassword/ResetPasswordForm';
 import AuthscreenLayout from '../Layout';
 

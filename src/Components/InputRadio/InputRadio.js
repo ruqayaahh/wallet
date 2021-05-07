@@ -1,3 +1,4 @@
+import React from 'react';
 import './input-radio.css'
 const InputRadio = ({label, placeholder, name, onChange, value, className, styles}) => {
    return (

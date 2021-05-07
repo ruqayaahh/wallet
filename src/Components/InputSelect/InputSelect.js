@@ -1,3 +1,4 @@
+import React from 'react';
 import { forwardRef } from 'react';
 // import './input.css'
 const InputSelect = forwardRef(({label, id, value, name, onChange, onBlur, className, placeholder, styles}, ref) => {

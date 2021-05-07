@@ -1,5 +1,6 @@
 // import './transfer.css';
 import Input from '../Input/Input';
+import React from 'react';
 import InputRadio from '../InputRadio/InputRadio';
 import Button from '../Button/Button';
 

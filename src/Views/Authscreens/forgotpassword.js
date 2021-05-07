@@ -1,3 +1,4 @@
+import React from 'react';
 import AuthscreenLayout from '../Layout';
 import ForgotPasswordForm from '../../Components/ForgotPassword/ForgotPassword';
 

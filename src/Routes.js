@@ -1,3 +1,4 @@
+import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Signup from './Views/Authscreens/signup';
 import Otp from './Views/Authscreens/otp';

@@ -1,7 +1,7 @@
+import React from 'react';
 import './signup.css';
 import Input from '../Input/Input';
 import { Link } from 'react-router-dom'
-// import eyeIcon from '../../assets/Eye-off.svg';
 import FormContainer from '../FormContainer/FormContainer';
 import Button from '../Button/Button';
 import { useForm } from 'react-hook-form';
@@ -10,7 +10,6 @@ import { useHistory } from 'react-router-dom';
 import { ErrorMessage } from "@hookform/error-message";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
-// import InputSelect from '../InputSelect/InputSelect';
 import axios from 'axios';
 const eye = <FontAwesomeIcon icon={faEye} />;
 

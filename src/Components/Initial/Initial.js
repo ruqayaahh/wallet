@@ -1,3 +1,4 @@
+import React from 'react';
 import './initial.css';
 
 function Initial({message, children}) {

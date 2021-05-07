@@ -1,3 +1,4 @@
+import React from 'react';
 import '../Styles/base.css';
 import Home from '../Components/Home/Home';
 import Message from '../Components/Message/Message';

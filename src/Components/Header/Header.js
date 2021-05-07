@@ -1,3 +1,4 @@
+import React from 'react';
 import './header.css';
 import notif from '../../assets/notification-2-line.svg';
 // import arrow from '../assets/Group 31000.svg';
