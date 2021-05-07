@@ -1,5 +1,5 @@
 import './modal.css';
-import close from '../assets/Close.svg';
+import close from '../../assets/Close.svg';
 
 const Modal = (props) => {
 

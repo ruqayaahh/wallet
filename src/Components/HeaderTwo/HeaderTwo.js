@@ -1,8 +1,8 @@
 import './header-two.css';
 import Button from '../Button/Button';
 import { useState } from 'react';
-import Modal from '../../Modal/Modal';
-import Transfer from '../../Transfer/Transfer';
+import Modal from '../Modal/Modal';
+import Transfer from '../Transfer/Transfer';
 import FundWallet from '../Funding/Funding';
 
 const HeaderTwo = () => {

@@ -1,6 +1,6 @@
 import '../Styles/base.css';
-import Home from '../Home/Home';
-import Message from '../Message/Message';
+import Home from '../Components/Home/Home';
+import Message from '../Components/Message/Message';
 
 function AuthscreenLayout({style, message, submessage, children}) {
     return (

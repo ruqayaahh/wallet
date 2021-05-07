@@ -1,4 +1,4 @@
-import OtpForm from '../../OtpForm/OtpForm';
+import OtpForm from '../../Components/OtpForm/OtpForm';
 import AuthscreenLayout from '../Layout';
 
 function Otp() {

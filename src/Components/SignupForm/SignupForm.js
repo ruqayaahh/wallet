@@ -1,29 +1,40 @@
 import './signup.css';
 import Input from '../Input/Input';
 import { Link } from 'react-router-dom'
-import togglePassword from '../assets/Eye-off.svg';
+// import eyeIcon from '../../assets/Eye-off.svg';
 import FormContainer from '../FormContainer/FormContainer';
 import Button from '../Button/Button';
 import { useForm } from 'react-hook-form';
+import { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import { ErrorMessage } from "@hookform/error-message";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
 // import InputSelect from '../InputSelect/InputSelect';
 import axios from 'axios';
+const eye = <FontAwesomeIcon icon={faEye} />;
 
 const SignupForm = () => {
     const style = {
         maxHeight: 'fit-content'
     };
+    const [passwordState, setPasswordState] = useState(false);
+    const togglePasswordVisibility = () => {
+        setPasswordState(passwordState ? false : true );
+    }
     const {register, handleSubmit, formState : {errors}} = useForm({
         criteriaMode: 'all',
         mode: "all"
     });
+    const history = useHistory();
     const onRegister = async (data) => {
-        console.log(data);
         await axios.post("https://wallet-by-ruqayaah.herokuapp.com/register", data)
-        .then((res) => alert(`You have successfully signed up. Your details are ${JSON.stringify(data)}`))
-        .catch((err) => console.log(err))
+        .then((res) => {
+            alert(res.data.message);
+            history.push('/otp');
+        })
+        .catch((err) => alert(err))
     };
-   
     return (
             <FormContainer onSubmit={handleSubmit(onRegister)} style={style}>
                     <div className="width d-flex-signup">
@@ -121,20 +132,22 @@ const SignupForm = () => {
                                 }})} type="tel" placeholder="070 33322 9900" name="phone" />
                         </div>
                     </div>
-                        <div className="width relative">
+                        <div className="width">
                             <ErrorMessage errors={errors} name="password" render={({messages}) => {
                                 console.log(messages);
                                 return messages
                                 ? Object.entries(messages).map(([type, value]) => (<small key={type}>{value}</small>))
                                 : null
                             }}/>
+                        <div className='relative'>
                             <Input label="Password" {...register('password', {
                                 required: "This field is required",
-                                minLength: {
-                                    value: 8,
-                                    message: "Password cannot be less than 8 characters"
-                                }})} type="password" placeholder="•••••••••" name="password"></Input>
-                            <img src={togglePassword} alt="password-icon" className="password-icon"></img>
+                                pattern: {
+                                    value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
+                                    message: "Password cannot be less than 8 characters and must contain at least one uppercase letter, one lowercase letter, one special character and a number"
+                                }})} type={passwordState ? "text" : "password"} placeholder="•••••••••" name="password"></Input>
+                                 <i className="password-icon" onClick={togglePasswordVisibility}>{eye}</i>
+                        </div>
                         </div>
                         <br></br>
                         <div className="width">
@@ -142,7 +155,8 @@ const SignupForm = () => {
                         </div>
                         <div className="width">
                             <p className="small-signup">
-                                Already have an account? <span className="span-signup"><Link to="/login" href="#">Sign In</Link></span>
+                                Already have an account? <span className="span-signup"><Link to="/login" href="#">Sign In</Link>
+                                </span>
                             </p>
                         </div>  
             </FormContainer>

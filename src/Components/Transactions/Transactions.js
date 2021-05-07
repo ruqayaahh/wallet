@@ -1,6 +1,6 @@
 import './transaction.css';
-import Success from '../assets/Group 31119.svg';
-import Fail from '../assets/Group 31018.svg'
+import Success from '../../assets/Group 31119.svg';
+import Fail from '../../assets/Group 31018.svg'
 
 const Transactions = ({message}) => {
     return (

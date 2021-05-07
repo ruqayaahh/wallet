@@ -1,0 +1,45 @@
+div.width {
+  width: 464px;
+}
+.d-flex-signup {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.inline-form {
+  width: 224px;
+}
+.relative {
+  position: relative;
+}
+.password-icon {
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  color: #b3becf;
+}
+.small-signup,
+.span-signup {
+  font-size: 14px;
+  line-height: 16px;
+  color: #6d7a98;
+  margin-top: 0;
+  text-align: start;
+}
+.span-signup > a {
+  font-weight: 600;
+  color: #1f6aec;
+  text-decoration: none;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.mt-0 {
+  margin-top: 0;
+}
+.span-forgot-password {
+  text-align: center;
+}

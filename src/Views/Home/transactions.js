@@ -1,6 +1,6 @@
 import DashboardLayout from '../UserLayout/UserDashboardLayout';
-import Initial from '../../Initial/Initial';
-import Transactions from '../../Transactions/Transactions';
+import Initial from '../../Components/Initial/Initial';
+import Transactions from '../../Components/Transactions/Transactions';
 
 function RecentTransactions() {
     return (

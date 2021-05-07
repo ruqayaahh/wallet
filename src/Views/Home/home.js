@@ -1,5 +1,5 @@
 import DashboardLayout from '../UserLayout/UserDashboardLayout';
-import Initial from '../../Initial/Initial';
+import Initial from '../../Components/Initial/Initial';
 import Box from '../../assets/Empty state image.svg';
 
 function Landing() {

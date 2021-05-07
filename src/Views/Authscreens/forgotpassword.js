@@ -1,5 +1,5 @@
 import AuthscreenLayout from '../Layout';
-import ForgotPasswordForm from '../../ForgotPassword/ForgotPassword';
+import ForgotPasswordForm from '../../Components/ForgotPassword/ForgotPassword';
 
 function ForgotPassword() {
     const style = {

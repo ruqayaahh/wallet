@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from '../assets/logo.svg';
-import dashboardIcon from '../assets/Dashboard.svg';
-import clipboard from '../assets/Clipboardlist.svg';
-import user from '../assets/Adduser.svg';
+import logo from '../../assets/logo.svg';
+import dashboardIcon from '../../assets/Dashboard.svg';
+import clipboard from '../../assets/Clipboardlist.svg';
+import user from '../../assets/Adduser.svg';
 import './sidebar.css';
 import { Link } from 'react-router-dom';
 

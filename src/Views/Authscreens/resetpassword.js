@@ -1,4 +1,4 @@
-import ResetPasswordForm from '../../ResetPassword/ResetPasswordForm';
+import ResetPasswordForm from '../../Components/ResetPassword/ResetPasswordForm';
 import AuthscreenLayout from '../Layout';
 
 function ResetPassword() {

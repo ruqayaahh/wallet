@@ -1,4 +1,4 @@
-import Mailbox from '../assets/Group.svg';
+import Mailbox from '../../assets/Group.svg';
 import FormContainer from '../FormContainer/FormContainer';
 import './inbox-reset.css';
 

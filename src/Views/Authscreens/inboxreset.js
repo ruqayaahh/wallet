@@ -1,5 +1,5 @@
 import '../../Styles/base.css';
-import InboxReset from '../../InboxReset/InboxReset';
+import InboxReset from '../../Components/InboxReset/InboxReset';
 import AuthscreenLayout from '../Layout';
 
 function Inbox() {

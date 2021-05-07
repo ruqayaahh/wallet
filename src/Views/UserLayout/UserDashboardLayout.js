@@ -1,8 +1,8 @@
 import '../../Styles/base.css';
-import Sidebar from '../../Sidebar/Sidebar';
-import Header from '../../Header/Header';
-import HeaderTwo from '../../HeaderTwo/HeaderTwo';
-import Balance from '../../Balance/Balance';
+import Sidebar from '../../Components/Sidebar/Sidebar';
+import Header from '../../Components/Header/Header';
+import HeaderTwo from '../../Components/HeaderTwo/HeaderTwo';
+import Balance from '../../Components/Balance/Balance';
 
 
 const DashboardLayout = ({children}) => {
