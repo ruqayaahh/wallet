@@ -6,11 +6,10 @@ import FormContainer from '../FormContainer/FormContainer';
 import Button from '../Button/Button';
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
-import { useHistory } from 'react-router-dom';
 import { ErrorMessage } from "@hookform/error-message";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
-import axios from 'axios';
+import axios from '../../api.js';
 const eye = <FontAwesomeIcon icon={faEye} />;
 
 const SignupForm = () => {
@@ -18,19 +17,22 @@ const SignupForm = () => {
         maxHeight: 'fit-content'
     };
     const [passwordState, setPasswordState] = useState(false);
+    let [email, setEmail] = useState('');
     const togglePasswordVisibility = () => {
         setPasswordState(passwordState ? false : true );
     }
-    const {register, handleSubmit, formState : {errors}} = useForm({
+    const {register, handleSubmit, formState : {errors}, reset} = useForm({
         criteriaMode: 'all',
         mode: "all"
     });
-    const history = useHistory();
     const onRegister = async (data) => {
-        await axios.post("https://wallet-by-ruqayaah.herokuapp.com/register", data)
+        setEmail(email = data.email);
+        localStorage.setItem('userEmail', email);
+        await axios.post("register", data)
         .then((res) => {
+            console.log(res.data);
             alert(res.data.message);
-            history.push('/otp');
+            reset();
         })
         .catch((err) => alert(err))
     };
@@ -87,10 +89,6 @@ const SignupForm = () => {
                                 ? Object.entries(messages).map(([type, value]) => (<small key={type}>{value}</small>))
                                 : null
                             }}/>
-                            {/* <InputSelect label="Gender" {...register('gender', {
-                                required: "This field is required",
-                                })} placeholder="Input your gender" name="gender" /> */}
-                                {/* {errors.gender && <small>This field is Required</small>} */}
                                 <div>
                                     <label className="text-label">Gender</label>
                                     <select {...register("gender", { required: "This field is required" })}>

@@ -19,6 +19,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.4",
     "react-simple-dropdown": "^3.2.3",
+    "react-verification-code-input": "^1.2.9",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
