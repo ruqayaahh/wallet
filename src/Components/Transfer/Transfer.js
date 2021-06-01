@@ -21,9 +21,9 @@ const Transfer = () => {
                     <InputRadio label="Dollar" type="radio" name="currency" style={styles} />
                 </div>
             </div>
-            <div className="acct-number">
+            {/* <div className="acct-number">
                 <Input label="Account Number" type="text" id="account-num" placeholder="23456788901"/>
-            </div>
+            </div> */}
             <div className="amount">
                 <Input label="Amount" type="text" id="amount" placeholder="₦ 00.00"/>
             </div>
