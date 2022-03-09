@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './form-container.css';
 
 const FormContainer = ({children, style, ...rest}) => {
@@ -9,3 +10,7 @@ const FormContainer = ({children, style, ...rest}) => {
     );
 }
 export default FormContainer;
+
+FormContainer.propTypes = {
+    style: PropTypes.object,
+};
