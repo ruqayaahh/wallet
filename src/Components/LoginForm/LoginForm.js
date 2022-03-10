@@ -1,38 +1,126 @@
-import React from 'react';
-import Input from '../Input/Input';
-import { Link } from 'react-router-dom';
-import FormContainer from '../FormContainer/FormContainer';
-import Button from '../Button/Button';
+import React from "react";
+import { useState } from "react";
+import Input from "../Input/Input";
+import { Link, useHistory } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import FormContainer from "../FormContainer/FormContainer";
+import Button from "../Button/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { ErrorMessage } from "@hookform/error-message";
+// import axios from "axios";
+// import axios from "../../api.js";
+
+const eye = <FontAwesomeIcon icon={faEye} />;
 
 const LoginForm = () => {
-    const style = {
-        height: '400px'
-    };
-    return (
-        <FormContainer style={style}>
-                    <div className="width">
-                        <Input label="Email Address" type="email" placeholder="Kingsleyomin@letshego.com" />
-                    </div>
-                    <div className="width relative">
-                        <Input label="Password" type="password" placeholder="•••••••••" />
-                        <svg className="password-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fillRule="evenodd" clipRule="evenodd" d="M3.70711 2.29289C3.31658 1.90237 2.68342 1.90237 2.29289 2.29289C1.90237 2.68342 1.90237 3.31658 2.29289 3.70711L16.2929 17.7071C16.6834 18.0976 17.3166 18.0976 17.7071 17.7071C18.0976 17.3166 18.0976 16.6834 17.7071 16.2929L16.2339 14.8197C17.7715 13.5924 18.939 11.9211 19.5424 9.99996C18.2681 5.94288 14.4778 3 10.0002 3C8.37665 3 6.84344 3.38692 5.48779 4.07358L3.70711 2.29289ZM7.96813 6.55391L9.48201 8.0678C9.6473 8.02358 9.82102 8 10.0003 8C11.1048 8 12.0003 8.89543 12.0003 10C12.0003 10.1792 11.9767 10.353 11.9325 10.5182L13.4463 12.0321C13.7983 11.4366 14.0003 10.7419 14.0003 10C14.0003 7.79086 12.2094 6 10.0003 6C9.25838 6 8.56367 6.20197 7.96813 6.55391Z" fill="#B3BECF" />
-                                <path d="M12.4541 16.6967L9.74965 13.9923C7.74013 13.8681 6.1322 12.2601 6.00798 10.2506L2.33492 6.57754C1.50063 7.57223 0.856368 8.73169 0.458008 10C1.73228 14.0571 5.52257 17 10.0002 17C10.8469 17 11.6689 16.8948 12.4541 16.6967Z" fill="#B3BECF" />
-                            </svg>
-                    </div>
-                    <div className="width mb-24">
-                        <span className="span-signup"><Link to="/forgot-password">Forgot Password?</Link></span>
-                    </div>
-                    <div className="width">
-                        <Button type="submit" title="Log In"onClick={() => alert('You have successfully logged in')} />
-                    </div>
-                    <div className="width">
-                            <p className="small-signup mb-0">
-                            Don't have an account? <span className="span-signup"><Link to="/">Register Now</Link></span>
-                            </p>
-                        </div>  
-                </FormContainer>
-    );
+  const style = {
+    height: "400px",
+  };
+  const [passwordState, setPasswordState] = useState(false);
+  const togglePasswordVisibility = () => {
+    setPasswordState(passwordState ? false : true);
+  };
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isDirty, isValid, isSubmitting },
+    reset,
+  } = useForm({
+    criteriaMode: "all",
+    mode: "all",
+  });
+  const history = useHistory();
+  const onLogin = async (data) => {
+    console.log(data);
+    // await axios.post("login", { data });
+    history.push("/dashboard");
+    reset();
+  };
+  return (
+    <FormContainer style={style} onSubmit={handleSubmit(onLogin)}>
+      <div className="width">
+        <ErrorMessage
+          errors={errors}
+          name="email"
+          render={({ messages }) => {
+            console.log(messages);
+            return messages
+              ? Object.entries(messages).map(([type, value]) => (
+                  <small key={type}>{value}</small>
+                ))
+              : null;
+          }}
+        />
+        <Input
+          label="Email Address"
+          {...register("email", {
+            required: "This field is required",
+            pattern: {
+              value:
+                /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+              message: "Email address is not valid",
+            },
+          })}
+          type="email"
+          placeholder="Kingsleyomin@letshego.com"
+        />
+      </div>
+      <div className="width relative">
+        <ErrorMessage
+          errors={errors}
+          name="password"
+          render={({ messages }) => {
+            console.log(messages);
+            return messages
+              ? Object.entries(messages).map(([type, value]) => (
+                  <small key={type}>{value}</small>
+                ))
+              : null;
+          }}
+        />
+        <Input
+          label="Password"
+          {...register("password", {
+            required: "This field is required",
+            pattern: {
+              value:
+                /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
+              message:
+                "Password cannot be less than 8 characters and must contain at least one uppercase letter, one lowercase letter, one special character and a number",
+            },
+          })}
+          type={passwordState ? "text" : "password"}
+          placeholder="•••••••••"
+        ></Input>
+        <i className="password-icon" onClick={togglePasswordVisibility}>
+          {eye}
+        </i>
+      </div>
+      <div className="width mb-24">
+        <span className="span-signup">
+          <Link to="/forgot-password">Forgot Password?</Link>
+        </span>
+      </div>
+      <div className="width">
+        <Button
+          type="submit"
+          title="Log In"
+          disabled={!isValid || !isDirty}
+          loading={isSubmitting}
+        />
+      </div>
+      <div className="width">
+        <p className="small-signup mb-0">
+          Don't have an account?{" "}
+          <span className="span-signup">
+            <Link to="/">Register Now</Link>
+          </span>
+        </p>
+      </div>
+    </FormContainer>
+  );
 };
 
 export default LoginForm;
