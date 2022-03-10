@@ -1,15 +1,21 @@
-import React, { Suspense } from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import Approutes from './Routes';
+import React from 'react';
+import { BrowserRouter as Router} from 'react-router-dom';
+import AppRoutes from './Routes';
 
-function App() {
-    return (
-        <BrowserRouter>
-            <Suspense fallback={<div>Loading Page....</div>}>
-                <Approutes />
-            </Suspense>
-        </BrowserRouter>
-    );
-}
+
+const App = () => {
+
+	return (
+
+
+			<Router>
+				<React.Suspense fallback={<div>Loading Page...</div>}>
+					<AppRoutes />
+				</React.Suspense>
+			</Router>
+
+
+	);
+};
 
 export default App;
