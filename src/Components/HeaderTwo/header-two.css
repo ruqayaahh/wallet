@@ -1,0 +1,37 @@
+.welcome-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.align-bottom {
+    align-self: flex-end; 
+}
+h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.25px;
+    color: #0B2253;
+}
+.header-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+div.btn-transfer {
+    width: 167px;
+    margin-right: 20px;
+}
+div.btn-funds {
+    width: 163px;
+}
+.btn-transfer-btn {
+    background: #FFFFFF;
+    border: 1px solid #1F6AEC;
+    color: #1F6AEC;
+    margin: 0;
+    padding: 0;
+}
+.btn-funds-btn {
+    margin: 0;
+    padding: 0;
+}

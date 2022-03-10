@@ -1,37 +1,25 @@
-div.form-container {
-    width: 528px;
-    height: 421px;
-    background: #FFFFFF;
-    border: 1px solid #DEE3EB;
-    box-sizing: border-box;
-    border-radius: 8px;
-    padding: 40px 32px;
-}
-div.sub-container {
+div.form-sub-container {
     padding: 18px 30px 21px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    align-content: center;
-    height: 341px;
-    width: 464px;
-    border-radius: 0px;
-    box-sizing: border-box;
+    align-items: center;
 }
 div.text-div {
     align-self: center;
 }
-h3 {
+h3.inbox-message {
     font-weight: 600;
     font-size: 32px;
     line-height: 40px;
     text-align: center;
     letter-spacing: -0.761905px;
     color: #0B2253;
+    margin: 0px;
     margin-bottom: 16px;
 }
-span {
-    font-size: 18px;
+span.inbox-message {
+    /* font-size: 18px; */
     line-height: 24px;
     text-align: center;
     letter-spacing: -0.05px;
@@ -45,7 +33,3 @@ div.img-div {
     border-radius: 0px;
     align-self: center;
 }
-/* img {
-    width: 100%;
-    height: 100%;
-} */
